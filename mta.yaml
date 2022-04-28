@@ -25,7 +25,7 @@ modules:
           srv-url: ${default-url}
     requires:
       - name: outreach-db
-      - name: outreach-auth
+      - name: outreach-uaa
 
   - name: outreach-db-deployer
     type: hdb
@@ -42,7 +42,7 @@ resources:
       service: hana # or 'hanatrial' on trial landscapes
       service-plan: hdi-shared
 
-  - name: outreach-auth
+  - name: outreach-uaa
     type: org.cloudfoundry.managed-service
     parameters:
       service: xsuaa

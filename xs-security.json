@@ -1,5 +1,22 @@
 {
-  "scopes": [],
-  "attributes": [],
-  "role-templates": []
+  "xsappname": "outreach",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "role-templates": [
+    {
+      "name": "Token_Exchange",
+      "description": "UAA",
+      "scope-references": [
+        "uaa.user"
+      ]
+    }
+  ],
+
+  "oauth2-configuration": {
+    "redirect-uris": [
+        "https://*.applicationstudio.cloud.sap/**",
+        "http://localhost/**"
+    ]
+}
+
 }
