@@ -9,7 +9,7 @@ applications:
 # -----------------------------------------------------------------------------------
 - name: outreach-srv
   random-route: true  # for development only
-  path: srv
+  path: .
   memory: 256M
   buildpack: nodejs_buildpack
   services:

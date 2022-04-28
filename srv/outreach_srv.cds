@@ -1,4 +1,4 @@
-using com.sap.outreach as outreach from '../db/outreach.cds';
+using { com.sap.outreach as outreach } from '../db/outreach.cds';
 
 service OutreachService {
 
